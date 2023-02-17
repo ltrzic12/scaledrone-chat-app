@@ -1,6 +1,7 @@
 import { useRef, useState } from "react";
 import Button from "./Button";
 import InputError from "./InputError";
+import "./Input.css"
 
 const Input = (props) => {
     const enteredTextRef = useRef();
@@ -36,7 +37,7 @@ const Input = (props) => {
                             backgroundColor: error ? "gray" : "transparent"
                         }}
                         type="text"
-                        placeholder="What's on your mind"
+                        placeholder="What's on your mind? Press Enter to send message."
                         autoFocus={true}
                         ref={enteredTextRef}
                         onChange={errorHandler}

@@ -1,6 +1,7 @@
 import UserAvatar from "./MsgHelpers/Avatar";
 import Text from "./MsgHelpers/Text";
 import MemberUsername from "./MsgHelpers/Username";
+import "./Message.css"
 
 const Messages = (props) => {
     const { data, id, member, currentMember } = props;

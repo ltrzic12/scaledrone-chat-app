@@ -1,0 +1,8 @@
+.input input{
+    position: relative;
+    right: 5px;
+}
+
+.input button {
+    visibility: hidden;
+}

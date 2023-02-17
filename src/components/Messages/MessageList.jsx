@@ -1,14 +1,15 @@
 import Messages from "./Message";
+import "./MessageList.css"
 
 const MessageList = (props) => {
     const {currentMember, messages} = props;
-    return <ul className="messages-list">
+    return <div className="container"><div className="lista"><ul className="messages-list">
         {messages.map((item) => (
             <Messages
             data={item.data} id={item.id} member={item.member} currentMember={currentMember}></Messages>
 
         ))}
-    </ul>
+    </ul></div></div>
 }
 
 export default MessageList;

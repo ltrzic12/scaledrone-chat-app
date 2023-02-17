@@ -7,7 +7,7 @@ const Avatar = (props) => {
     const avatarChangeHandler = (e) => {
         props.onSelectedAvatar(e.target.value);
     }
-    return <select onChange={avatarChangeHandler}>
+    return <select onChange={avatarChangeHandler} >
         <option id="randomAvatar" value={randomAvatars} key="First Key">Pick an avatar</option>
 
         {avatars.map(a => (

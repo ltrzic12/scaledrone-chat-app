@@ -1,7 +1,12 @@
 h2{
     position: relative;
-    left: 45%;
+    top: -1rem;
+    font-size: xx-large;
+    color: black;
+    left: 2rem;
+    width: 100%;
+    margin-bottom: -5px;
 
-    font-size: 25px;
-    font-weight:900;
+   
 }
+

@@ -2,7 +2,7 @@ import { useState } from "react";
 import randomColor from "../../utils/randomColor";
 import Input from "../Input/Input";
 import Login from "../LoginPage/Login";
-import Messages from "../Messages/Message";
+
 import MessageList from "../Messages/MessageList";
 import Header from "./Header";
 import Welcome from "./Welcome";
@@ -11,7 +11,7 @@ const ChatApp = () => {
     const [loggedIn, setLoggedIn] = useState(false);
     const [currentMember, setCurrentMember] = useState({});
     const [drone, setDrone] = useState(null);
-    // const [messages, setMessages] = useState([]);
+    const [messages, setMessages] = useState([]);
 
     const logInHandler = (username, emoji, channel_ID) => {
         const member = {
@@ -42,7 +42,7 @@ const ChatApp = () => {
         setCurrentMember(member);
         setDrone(drone);
     };
-    const [messages, setMessages] = useState([{}]);
+    
     const sendMessage = (message) => {
         drone.publish({
             room: "observable-room",
@@ -51,7 +51,7 @@ const ChatApp = () => {
     };
 
     return (
-        <div className="ChatApp">
+        <div className="chatapp">
             {!loggedIn && <Welcome />}
             {loggedIn && <Header username={currentMember.name} />}
             {!loggedIn && <Login onLogin={logInHandler} />}

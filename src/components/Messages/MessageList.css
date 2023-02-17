@@ -1,0 +1,26 @@
+.container{
+
+    display: flex;
+    flex-direction: column-reverse;
+    
+    position: relative;
+    
+    height: 80vh;
+    background: rgb(52,46,142);
+background: linear-gradient(90deg, rgba(52,46,142,1) 0%, rgba(40,40,129,1) 53%, rgba(14,77,89,1) 100%);
+    overflow-y: scroll;
+    color: white;
+    border: 1px solid transparent;
+    margin-top: 1px;
+    margin-bottom: 5px;
+}
+
+
+.lista{
+    width: 50rem;
+    position: relative;
+    left: 20rem;
+}
+
+
+
